@@ -6,6 +6,12 @@
   --color-body: #918ca4;
 }
 
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 /*Typography */
 
 html {
@@ -167,4 +173,95 @@ a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+}
+
+/* Buttons */
+.button {
+  /*width: 395px;
+  height: 60px; */
+  border-radius: 40px;
+  border: 0;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 1.8rem;
+  font-weight: 600;
+  justify-content: center;
+  max-width: 400px;
+  padding: 2rem 19rem;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+  margin: 1rem 0;
+}
+
+.button--primary {
+  background: var(--color-primary);
+  color: white;
+}
+
+.button--primary:hover {
+  background: #ba4123;
+}
+
+.button--secondary {
+  background: var(--color-secondary);
+  color: white;
+}
+
+.button--secondary:hover {
+  background: #00c8eb;
+}
+
+.button--icon {
+  /*list-style-image: url(../Images/search.svg);*/
+  /* padding-left: 3rem; */
+  background: var(--color-accent);
+  color: white;
+  padding: 2rem 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  max-width: 300px;
+  min-width: 200px;
+}
+
+.button--icon:hover {
+  background: rgb(146, 29, 29);
+}
+
+.btn--block {
+  width: 100%;
+  display: inline-block;
+}
+
+.btn--outline {
+  background: #f3f9f8;
+  color: var(--color-headings);
+  border: 2px solid var(--color-headings);
+}
+
+.btn--outline:hover {
+  background: var(--color-headings);
+  color: #f3f9f8;
+}
+
+.icon-search {
+  height: 3rem;
+  width: 3rem;
+  fill: white;
+  padding-right: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .button {
+    padding: 2rem 10rem;
+    font-size: 1.5rem;
+  }
+
+  .button--icon {
+    padding: 2rem 5rem;
+  }
 }
