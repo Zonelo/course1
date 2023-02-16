@@ -149,6 +149,10 @@ a {
   padding-left: 3rem;
 }
 
+.list--notick {
+  list-style-type: none;
+}
+
 .list--tick .list__item {
   padding-left: 0.5rem;
   margin-bottom: 1rem;
@@ -360,7 +364,17 @@ a {
   background: #02cdf1;
 }
 
+.card--primary .badge--primary {
+  background: #2f6ec1;
+}
+
 /* Plans */
+
+.plan {
+  transition: transform 0.2s ease-out;
+  padding: 3rem;
+}
+
 .plan__name {
   color: #fff;
   margin: 0;
@@ -390,6 +404,10 @@ a {
   margin-bottom: 2rem;
 }
 
+.plan--popular {
+  transform: scale(1.1);
+}
+
 .plan--popular .card__header {
   position: relative;
 }
@@ -401,6 +419,13 @@ a {
   position: absolute;
   top: -4px;
   right: 5%;
+}
+
+.plan:hover {
+  transform: scale(1.05);
+}
+.plan--popular:hover {
+  transform: scale(1.15);
 }
 
 @media screen and (min-width: 1024px) {
@@ -642,7 +667,7 @@ a {
 }
 
 .container {
-  max-width: 1140px;
+  max-width: 1240px;
   margin: 0 auto;
 }
 
@@ -761,3 +786,23 @@ a {
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   }
 }
+
+/* Plans block */
+.block-plans .grid {
+  gap: 1rem 0;
+}
+
+.block-plans .card {
+  /* helps to not need the use of a media query here */
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* @media screen and (min-width: 768px) {
+  .plans--block {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .plans--popular-block {
+  }
+} */
