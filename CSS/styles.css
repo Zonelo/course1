@@ -806,3 +806,33 @@ a {
   .plans--popular-block {
   }
 } */
+
+/* Features Block */
+
+/* vvvv These done on my own vvvvv */
+/*
+.features-title {
+  text-align: center;
+}
+
+.features-chart {
+  width: 100%;
+  max-width: 577px;
+  margin: 1rem 2rem;
+  padding: 1rem;
+}
+
+.features--easy {
+  display: block;
+  margin: 1rem;
+}
+
+.features--easy .media__image {
+  padding: 1.8rem;
+}
+
+.features--easy-icon {
+  height: 30px;
+  width: 30px;
+}
+*/
