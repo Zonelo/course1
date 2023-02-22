@@ -26,6 +26,10 @@ html {
   font-size: 62.5%;
 }
 
+img {
+  width: 100%;
+}
+
 body {
   font-family: Inter, Arial, Helvetica, sans-serif;
   font-size: 2.4rem;
@@ -218,7 +222,7 @@ a {
   justify-content: center;
   margin: 1rem 0;
   outline: 0;
-  padding: 2rem 3rem;
+  padding: 2rem 4vw;
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
@@ -255,7 +259,7 @@ a {
   font-size: 1.5rem;
   font-weight: bold;
   max-width: 300px;
-  min-width: 200px;
+  /* min-width: 200px; */
 }
 
 .button--icon:hover {
@@ -332,6 +336,7 @@ a {
   border: 0;
   flex-grow: 1;
   padding: 1.5rem 2rem;
+  width: 0;
 }
 
 .input-group .button {
@@ -523,7 +528,7 @@ a {
 
 @media screen and (min-width: 768px) {
   .grid--1x2 {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -676,7 +681,7 @@ a {
 }
 
 .container {
-  max-width: 1240px;
+  max-width: 1140px;
   margin: 0 auto;
 }
 
@@ -774,14 +779,15 @@ a {
 /* Domain Block */
 .block-domain .input-group {
   box-shadow: 0 0 30px 20px #e8eef1;
-  border: none;
+  border: 0;
   margin: 4rem auto;
   max-width: 670px;
 }
 
 .block-domain__prices {
+  color: var(--color-headings);
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 6rem);
   font-size: 2rem;
   font-weight: 600;
@@ -793,7 +799,7 @@ a {
 @media screen and (min-width: 768px) {
   .block-domain__prices {
     /* This vvvv helps to allow for future added buttons to be aligned evenvly */
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
 }
 
@@ -804,7 +810,7 @@ a {
 
 .block-plans .card {
   /* helps to not need the use of a media query here */
-  max-width: 540px;
+  max-width: 500px;
   margin: 0 auto;
 }
 
@@ -934,7 +940,7 @@ a {
 
 .footer__brand img {
   /* consider refactoring and adding to all img */
-  width: 100%;
+  /* width: 100%; */
   max-width: 230px;
 }
 
